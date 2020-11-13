@@ -25,7 +25,6 @@ CMS.init({
     load_config_file: false,
     media_folder: "static/uploads",
     public_folder: "/uploads",
-    publish_mode: "editorial_workflow",
     show_preview_links: false,
     collections: [
       {
