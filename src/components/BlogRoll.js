@@ -11,7 +11,7 @@ export default class BlogRoll extends React.Component {
 
     return (
       <div className="grids">
-        {posts.map(edge => (
+        {(posts || []).map(edge => (
           <PostLink key={edge.node.id} post={edge.node} />
         ))}
         {!clipped && (
