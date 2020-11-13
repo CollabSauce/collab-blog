@@ -3,9 +3,9 @@ import Helmet from "react-helmet";
 import Layout from "../components/Layout";
 import { Link } from "gatsby";
 
-const notFound = () => {
+const notFound = ({ location }) => {
   return (
-    <Layout location={this.props.location}>
+    <Layout location={location}>
       <Helmet>
         <title>Page not found</title>
       </Helmet>
