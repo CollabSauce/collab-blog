@@ -14,8 +14,6 @@ I’m excited to announce a new feature to the Collab Sauce product suite - text
 
 The short of it: You can now suggest text edits on website copy and view them directly on your site.
 
-![collaboration change text on live website collab sauce integration](/uploads/text-edits.gif "text-edits")
-
 \
 **How It Went Down:**
 
