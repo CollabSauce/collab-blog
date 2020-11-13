@@ -7,7 +7,7 @@ const BlogPostPreview = ({ entry, widgetFor }) => {
     <BlogPostTemplate
       content={widgetFor("body") || ""}
       title={entry.getIn(["data", "title"]) || ""}
-      featuredimage={entry.getIn(["data", "featuredimage"])}
+      featuredimage={`/${entry.getIn(["data", "featuredimage"])}`}
       date={entry.getIn(["data", "date"]).toDateString()}
       similarPosts={{}}
     />
