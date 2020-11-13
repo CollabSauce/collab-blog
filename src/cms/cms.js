@@ -45,7 +45,7 @@ CMS.init({
             label: "Path (url)",
             name: "path",
             widget: "string",
-            pattern: ["/"],
+            pattern: ["/", "Path must start with /"],
             hint: "Path must start with /",
           },
           { label: "Title", name: "title", widget: "string" },
