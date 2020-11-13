@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Img from "gatsby-image/withIEPolyfill"
+import Img from "gatsby-image/withIEPolyfill";
 
 const PreviewCompatibleImage = ({
   imageInfo,
@@ -38,9 +38,7 @@ const PreviewCompatibleImage = ({
   }
 
   if (!!image && typeof image === "string")
-    return (
-      <img className={layoutClass} src={image} alt={alt} />
-    );
+    return <img className={layoutClass} src={image} alt={alt} />;
 
   return null;
 };

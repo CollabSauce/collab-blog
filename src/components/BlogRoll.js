@@ -11,7 +11,9 @@ export default class BlogRoll extends React.Component {
 
     return (
       <div className="grids">
-        {posts.map(edge => <PostLink key={edge.node.id} post={edge.node} />)}
+        {posts.map(edge => (
+          <PostLink key={edge.node.id} post={edge.node} />
+        ))}
         {!clipped && (
           <BlogRollPagination pageContext={pageContext} pageName={pageName} />
         )}

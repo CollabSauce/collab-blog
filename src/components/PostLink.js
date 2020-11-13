@@ -1,5 +1,5 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import { Link } from "gatsby";
 import PreviewCompatibleImage from "./PreviewCompatibleImage";
 
 const PostLink = ({ post }) => (
@@ -23,4 +23,4 @@ const PostLink = ({ post }) => (
     </header>
   </article>
 );
-export default PostLink
+export default PostLink;

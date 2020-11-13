@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import { Helmet } from "react-helmet";
-import Navigation from "./navigation"
+import Navigation from "./navigation";
 import useSiteMetadata from "./SiteMetadata";
 
 const Layout = ({ location, children }) => {
@@ -25,7 +25,10 @@ const Layout = ({ location, children }) => {
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:url" content={`${siteUrl}${location.pathname}`} />
-        <meta property="og:image" content={`${siteUrl}/images/collab-logo.svg`} />
+        <meta
+          property="og:image"
+          content={`${siteUrl}/images/collab-logo.svg`}
+        />
         <meta
           property="og:image:secure_url"
           content={`${siteUrl}/images/collab-logo.svg`}

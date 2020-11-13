@@ -25,7 +25,6 @@ export const BlogPostTemplate = ({
     <div className="blog-post-container">
       {helmet || ""}
       <article className="post">
-
         {!featuredimage && (
           <div className="post-thumbnail">
             <h1 className="post-title">{title}</h1>

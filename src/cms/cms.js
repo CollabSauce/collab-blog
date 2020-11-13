@@ -23,8 +23,8 @@ CMS.init({
       },
     },
     load_config_file: false,
-    media_folder: 'static/uploads',
-    public_folder: 'uploads/',
+    media_folder: "static/uploads",
+    public_folder: "uploads/",
     publish_mode: "editorial_workflow",
     show_preview_links: false,
     collections: [
@@ -64,51 +64,58 @@ CMS.init({
           },
           { label: "Body", name: "body", widget: "markdown" },
         ],
-      }, {
+      },
+      {
         name: "settings",
         label: "Settings",
-        files: [{
-          name: "config",
-          label: "Config",
-          file: "site-meta-data.json",
-          fields: [
-            {
-              widget: "string",
-              name: "title",
-              label: "Site Title",
-              required: true,
-            }, {
-              widget: "string",
-              name: "siteUrl",
-              label: "Website URL",
-              required: true,
-            }, {
-              widget: "text",
-              name: "description",
-              label: "Description",
-              required: false,
-            }, {
-              widget: "object",
-              name: "home",
-              label: "Homepage Options",
-              fields: [
-                {
-                  widget: "string",
-                  name: "title",
-                  label: "Title",
-                  default: "",
-                  required: false,
-                }, {
-                  widget: "markdown",
-                  name: "description",
-                  label: "Description",
-                  default: "",
-                  required: false,
-                },
-              ],
-            },
-          ],
-        }],
+        files: [
+          {
+            name: "config",
+            label: "Config",
+            file: "site-meta-data.json",
+            fields: [
+              {
+                widget: "string",
+                name: "title",
+                label: "Site Title",
+                required: true,
+              },
+              {
+                widget: "string",
+                name: "siteUrl",
+                label: "Website URL",
+                required: true,
+              },
+              {
+                widget: "text",
+                name: "description",
+                label: "Description",
+                required: false,
+              },
+              {
+                widget: "object",
+                name: "home",
+                label: "Homepage Options",
+                fields: [
+                  {
+                    widget: "string",
+                    name: "title",
+                    label: "Title",
+                    default: "",
+                    required: false,
+                  },
+                  {
+                    widget: "markdown",
+                    name: "description",
+                    label: "Description",
+                    default: "",
+                    required: false,
+                  },
+                ],
+              },
+            ],
+          },
+        ],
       },
     ],
   },

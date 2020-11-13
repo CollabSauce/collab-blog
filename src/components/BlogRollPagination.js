@@ -15,20 +15,14 @@ export default class BlogRollPagination extends React.Component {
       <div className="pagination-row">
         <div>
           {!isFirst && (
-            <Link
-              to={`${pageName}/${prevPage}`}
-              rel="prev"
-            >
+            <Link to={`${pageName}/${prevPage}`} rel="prev">
               ← Previous
             </Link>
           )}
         </div>
         <div>
           {!isLast && (
-            <Link
-              to={`${pageName}/${nextPage}`}
-              rel="next"
-            >
+            <Link to={`${pageName}/${nextPage}`} rel="next">
               Next →
             </Link>
           )}

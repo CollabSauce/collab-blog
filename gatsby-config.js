@@ -59,48 +59,49 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
-        // gatsby-remark-relative-images must
-        // go before gatsby-remark-images
-        {
-          // Convert image src(s) in markdown to be relative to their node’s parent directory.
-          // This will help gatsby-remark-images match images outside the node folder.
-          // For example, use with NetlifyCMS.
-          // NOTE: this doesn't work for frontmatter images. Just images direclty embedded in the markdown body.
-          resolve: "gatsby-remark-relative-images",
-          options: {
-            name: "uploads",
+          // gatsby-remark-relative-images must
+          // go before gatsby-remark-images
+          {
+            // Convert image src(s) in markdown to be relative to their node’s parent directory.
+            // This will help gatsby-remark-images match images outside the node folder.
+            // For example, use with NetlifyCMS.
+            // NOTE: this doesn't work for frontmatter images. Just images direclty embedded in the markdown body.
+            resolve: "gatsby-remark-relative-images",
+            options: {
+              name: "uploads",
+            },
           },
-        },
-        {
-          // Processes images in markdown so they can be used in the production build.
-          // (Pretty sure it's similar to transformer-sharp, but for markdown images directly in the body)
-          resolve: "gatsby-remark-images",
-          options: {
-            // It's important to specify the maxWidth (in pixels) of
-            // the content container as this plugin uses this as the
-            // base for generating different widths of each image.
-            maxWidth: 2048,
+          {
+            // Processes images in markdown so they can be used in the production build.
+            // (Pretty sure it's similar to transformer-sharp, but for markdown images directly in the body)
+            resolve: "gatsby-remark-images",
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              maxWidth: 2048,
+            },
           },
-        },
-        {
-          resolve: "gatsby-remark-copy-linked-files",
-          options: {
-            destinationDir: "static",
+          {
+            resolve: "gatsby-remark-copy-linked-files",
+            options: {
+              destinationDir: "static",
+            },
           },
-        },
-        {
-          resolve: `gatsby-remark-prismjs`,
-          options: {
-            classPrefix: "language-",
-            inlineCodeMarker: null,
-            aliases: {},
-            showLineNumbers: false,
-            noInlineHighlight: false,
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              classPrefix: "language-",
+              inlineCodeMarker: null,
+              aliases: {},
+              showLineNumbers: false,
+              noInlineHighlight: false,
+            },
           },
-        },
-        {
-          resolve: 'gatsby-remark-emojis',
-        }],
+          {
+            resolve: "gatsby-remark-emojis",
+          },
+        ],
       },
     },
     // Intercepts local links from markdown and other non-react pages and does a client-side
@@ -140,11 +141,11 @@ module.exports = {
         },
       },
     },
-    'gatsby-plugin-dark-mode',
+    "gatsby-plugin-dark-mode",
     // siteURL is a must for sitemap generation
     "gatsby-plugin-sitemap", // Create a sitemap for your Gatsby site.
     // Automatically generates a _headers file and a _redirects file at the root of the
     // public folder to configure HTTP headers and redirects on Netlify.
     "gatsby-plugin-netlify", // make sure to keep it last in the array
   ],
-}
+};
