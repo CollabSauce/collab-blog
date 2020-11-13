@@ -55,7 +55,7 @@ export const BlogPostTemplate = ({
       </article>
       {similarPosts.edges && (
         <>
-          <h3>More Like This</h3>
+          <h3 className="more-like-this">More Like This</h3>
           <BlogRoll data={blogRollData} clipped />
         </>
       )}

@@ -4,7 +4,7 @@ import ThemeChanger from "../components/themeChanger";
 
 export default props => (
   <nav className="navigation">
-    <Link to="/contact">Contact</Link>
+    <a href="mailto:info@collabsauce.com">Contact</a>
     <ThemeChanger />
   </nav>
 );

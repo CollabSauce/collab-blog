@@ -10,14 +10,16 @@ export default class BlogRoll extends React.Component {
     const { edges: posts } = data.allMarkdownRemark;
 
     return (
-      <div className="grids">
-        {(posts || []).map(edge => (
-          <PostLink key={edge.node.id} post={edge.node} />
-        ))}
+      <>
+        <div className="grids">
+          {(posts || []).map(edge => (
+            <PostLink key={edge.node.id} post={edge.node} />
+          ))}
+        </div>
         {!clipped && (
           <BlogRollPagination pageContext={pageContext} pageName={pageName} />
         )}
-      </div>
+      </>
     );
   }
 }
@@ -44,6 +46,7 @@ export const query = graphql`
       date(formatString: "MMMM DD, YYYY")
       path
       featuredimage {
+        publicURL
         childImageSharp {
           fluid(maxWidth: 750, quality: 100) {
             ...GatsbyImageSharpFluid

@@ -37,8 +37,13 @@ const PreviewCompatibleImage = ({
     );
   }
 
-  if (!!image && typeof image === "string")
-    return <img className={layoutClass} src={image} alt={alt} />;
+  if (!!image && typeof image.publicURL === "string") {
+    return (
+      <div className="blog-post-public-url-img-container">
+        <img className={layoutClass} src={image.publicURL} alt={alt} />
+      </div>
+    );
+  }
 
   return null;
 };

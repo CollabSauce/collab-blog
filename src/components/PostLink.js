@@ -10,6 +10,8 @@ const PostLink = ({ post }) => (
           image: post.frontmatter.featuredimage,
           alt: `featured image thumbnail for post ${post.frontmatter.title}`,
         }}
+        objectFit="cover"
+        layoutClass="blog-post-blog-roll"
         fluidProps={{ aspectRatio: 1 }}
       />
     </Link>
