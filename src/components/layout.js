@@ -25,10 +25,7 @@ const Layout = ({ location, children }) => {
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:url" content={`${siteUrl}${location.pathname}`} />
-        <meta
-          property="og:image"
-          content="static/images/collab-logo.svg"
-        />
+        <meta property="og:image" content="static/images/collab-logo.svg" />
         <meta
           property="og:image:secure_url"
           content="static/images/collab-logo.svg"
@@ -37,10 +34,7 @@ const Layout = ({ location, children }) => {
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
-        <meta
-          name="twitter:image"
-          content="static/images/collab-logo.svg"
-        />
+        <meta name="twitter:image" content="static/images/collab-logo.svg" />
       </Helmet>
       <header className="site-header">
         <div className="site-title">

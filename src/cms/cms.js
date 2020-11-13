@@ -2,8 +2,6 @@ import CMS from "netlify-cms-app";
 
 import BlogPostPreview from "./preview-templates/BlogPostPreview";
 
-CMS.registerPreviewStyle("../yoast.css");
-CMS.registerPreviewStyle("../all.css");
 CMS.registerPreviewTemplate("blog", BlogPostPreview);
 
 // In gatsby-config.js, for gatsby-plugin-netlify-cms, we pass

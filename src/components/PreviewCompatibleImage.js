@@ -37,12 +37,24 @@ const PreviewCompatibleImage = ({
     );
   }
 
-  if (!!image && typeof image.publicURL === "string") {
-    return (
-      <div className="blog-post-public-url-img-container">
-        <img className={layoutClass} src={image.publicURL} alt={alt} />
-      </div>
-    );
+  if (
+    (!!image && typeof image.publicURL === "string") ||
+    typeof image === "string"
+  ) {
+    let imgSrc = "";
+    if (typeof image.publicURL === "string") {
+      imgSrc = image.publicURL;
+    } else if (typeof image === "string") {
+      imgSrc = image;
+    }
+
+    if (imgSrc) {
+      return (
+        <div className="blog-post-public-url-img-container">
+          <img className={layoutClass} src={imgSrc} alt={alt} />
+        </div>
+      );
+    }
   }
 
   return null;
