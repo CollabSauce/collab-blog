@@ -12,12 +12,12 @@ const Layout = ({ location, children }) => {
         <html lang="en" />
         <title>{title}</title>
         <meta name="description" content={description} />
-        <meta name="image" content={`${siteUrl}/images/collab-logo.svg`} />
+        <meta name="image" content="static/images/collab-logo.svg" />
 
         <link
           rel="icon"
           type="image/png"
-          href={`${siteUrl}/images/logo192.png`}
+          href="static/images/logo192.png"
           sizes="192x192"
         />
         <meta name="theme-color" content="#fff" />
@@ -27,11 +27,11 @@ const Layout = ({ location, children }) => {
         <meta property="og:url" content={`${siteUrl}${location.pathname}`} />
         <meta
           property="og:image"
-          content={`${siteUrl}/images/collab-logo.svg`}
+          content="static/images/collab-logo.svg"
         />
         <meta
           property="og:image:secure_url"
-          content={`${siteUrl}/images/collab-logo.svg`}
+          content="static/images/collab-logo.svg"
         />
 
         <meta name="twitter:card" content="summary" />
@@ -39,7 +39,7 @@ const Layout = ({ location, children }) => {
         <meta name="twitter:description" content={description} />
         <meta
           name="twitter:image"
-          content={`${siteUrl}/images/collab-logo.svg`}
+          content="static/images/collab-logo.svg"
         />
       </Helmet>
       <header className="site-header">

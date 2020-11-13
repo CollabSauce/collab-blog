@@ -114,7 +114,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-favicon", // favicon
       options: {
-        logo: "./src/images/logo192.png",
+        logo: "./static/images/logo192.png",
         appName: "Collab Sauce Blog", // used for "application-name" meta-tag
       },
     },
