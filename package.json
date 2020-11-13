@@ -68,7 +68,7 @@
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "lint": "eslint ./src",
     "pre-deploy-checks": "npm run lint && npm run prettier",
-    "prettier": "prettier \"{gatsby-*.js,src/**/*.js}\"",
+    "prettier": "prettier --list-different \"{gatsby-*.js,src/**/*.js}\"",
     "serve": "gatsby serve",
     "start": "npm run develop",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
