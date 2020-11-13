@@ -53,8 +53,12 @@ export const BlogPostTemplate = ({
         )}
         <PostContent content={content} className="blog-post-content" />
       </article>
-      <h3>More Like This</h3>
-      <BlogRoll data={blogRollData} clipped />
+      {similarPosts.edges.length && (
+        <>
+          <h3>More Like This</h3>
+          <BlogRoll data={blogRollData} clipped />
+        </>
+      )}
     </div>
   );
 };
