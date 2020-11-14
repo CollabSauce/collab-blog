@@ -12,7 +12,7 @@ const Layout = ({ location, children }) => {
         <html lang="en" />
         <title>{title}</title>
         <meta name="description" content={description} />
-        <meta name="image" content="images/collab-logo.svg" />
+        <meta name="image" content="/images/collab-logo.svg" />
 
         <link
           rel="icon"
@@ -25,13 +25,16 @@ const Layout = ({ location, children }) => {
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:url" content={`${siteUrl}${location.pathname}`} />
-        <meta property="og:image" content="images/collab-logo.svg" />
-        <meta property="og:image:secure_url" content="images/collab-logo.svg" />
+        <meta property="og:image" content="/images/collab-logo.svg" />
+        <meta
+          property="og:image:secure_url"
+          content="/images/collab-logo.svg"
+        />
 
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
-        <meta name="twitter:image" content="images/collab-logo.svg" />
+        <meta name="twitter:image" content="/images/collab-logo.svg" />
       </Helmet>
       <header className="site-header">
         <div className="site-title">
