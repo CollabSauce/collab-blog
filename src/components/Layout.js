@@ -17,7 +17,7 @@ const Layout = ({ location, children }) => {
         <link
           rel="icon"
           type="image/png"
-          href="images/logo192.png"
+          href="/images/logo192.png"
           sizes="192x192"
         />
         <meta name="theme-color" content="#fff" />
