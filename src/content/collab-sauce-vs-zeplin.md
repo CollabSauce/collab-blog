@@ -2,7 +2,7 @@
 templateKey: blog-post
 path: /collabsauce-vs-zeplin
 title: Collab Sauce vs Zeplin
-date: 2020-11-14T03:03:00.755Z
+date: 2020-11-03T03:03:00.755Z
 description: Collab Sauce is the easiest way to collect, organise and act on
   website feedback. Collab Sauce transforms your website into a collaborative
   experience. (1) Change your website designs visually while logging CSS into
