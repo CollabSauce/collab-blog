@@ -170,7 +170,10 @@ export const pageQuery = graphql`
     recentPosts: allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
       filter: {
-        frontmatter: { templateKey: { eq: "blog-post" }, isvisible: { eq: true } }
+        frontmatter: {
+          templateKey: { eq: "blog-post" }
+          isvisible: { eq: true }
+        }
         id: { ne: $id }
       }
       limit: $limit
