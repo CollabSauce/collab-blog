@@ -85,6 +85,7 @@ const BlogPost = ({ data, location }) => {
 
   const metaTitle = `${post.frontmatter.title} | ${title}`;
   const metaDescription = post.frontmatter.description;
+  const metaKeywords = post.frontmatter.keywords;
   const metaImage =
     post.frontmatter.featuredimage &&
     `${siteUrl}${post.frontmatter.featuredimage.publicURL}`;
@@ -97,6 +98,7 @@ const BlogPost = ({ data, location }) => {
         helmet={
           <Helmet title={metaTitle}>
             <meta name="description" content={metaDescription} />
+            <meta name="keywords" content={metaKeywords} />
             {metaImage ? <meta name="image" content={metaImage} /> : null}
             <meta property="og:type" content="article" />
             <meta property="og:title" content={metaTitle} />
@@ -149,6 +151,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         description
+        keywords
         featuredimage {
           publicURL
           childImageSharp {

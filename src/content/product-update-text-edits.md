@@ -8,6 +8,7 @@ description: Collab Sauce is the easiest way to collect, organise and act on
   experience. (1) Change your website designs visually while logging CSS into
   tasks (2) create and collect comments that are logged in tasks and (3)
   automate metadata collection to make devs lives easier.
+keywords: Bug Report, CSS, no-code, design qa, quality assurance, quality testing, text changes, text edits, live text changes, translation changes, distributed global teams, website feedback, visual feedback, last mile solution, design agency, marketing agency, designer feedback, bug tracking, kan ban, asana, trello, monday, startups, saas, bug reporting, bug managment, qa managment
 featuredimage: /uploads/text-edits.gif
 ---
 I’m excited to announce a new feature to the Collab Sauce product suite - text edits!

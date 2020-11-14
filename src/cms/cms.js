@@ -54,6 +54,12 @@ CMS.init({
             widget: "text",
           },
           {
+            label: "Meta Keywords",
+            name: "keywords",
+            required: false,
+            widget: "text",
+          },
+          {
             label: "Featured Image",
             name: "featuredimage",
             widget: "image",
