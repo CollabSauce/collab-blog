@@ -83,6 +83,12 @@ module.exports = {
             },
           },
           {
+            // Wraps iframes or objects (e.g. embedded YouTube videos) within markdown files in a responsive
+            // elastic container with a fixed aspect ratio. This ensures that the iframe or object
+            // will scale proportionally and to the full width of its container.
+            resolve: "gatsby-remark-responsive-iframe",
+          },
+          {
             resolve: "gatsby-remark-copy-linked-files",
             options: {
               destinationDir: "static",
@@ -141,7 +147,7 @@ module.exports = {
         },
       },
     },
-    "gatsby-plugin-dark-mode",
+    "gatsby-plugin-dark-mode", // handles some of the details of implementing a dark mode theme.
     // siteURL is a must for sitemap generation
     "gatsby-plugin-sitemap", // Create a sitemap for your Gatsby site.
     // Automatically generates a _headers file and a _redirects file at the root of the
