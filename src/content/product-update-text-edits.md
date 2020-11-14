@@ -3,6 +3,7 @@ templateKey: blog-post
 path: /text-edits
 title: "Product Update: Text-Edits"
 date: 2020-10-23T20:50:37.516Z
+isvisible: true
 description: Collab Sauce is the easiest way to collect, organise and act on
   website feedback. Collab Sauce transforms your website into a collaborative
   experience. (1) Change your website designs visually while logging CSS into

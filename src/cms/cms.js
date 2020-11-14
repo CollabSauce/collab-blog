@@ -47,6 +47,7 @@ CMS.init({
           },
           { label: "Title", name: "title", widget: "string" },
           { label: "Publish Date", name: "date", widget: "datetime" },
+          { label: "Is Visible on Home Page", name: "isvisible", widget: "boolean", default: "true" },
           {
             label: "Meta Description",
             name: "description",

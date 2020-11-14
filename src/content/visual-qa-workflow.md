@@ -3,6 +3,7 @@ templateKey: blog-post
 path: /visual-qa-workflow
 title: Visual QA Workflow
 date: 2020-11-08T03:14:56.203Z
+isvisible: true
 description: Collab Sauce is the easiest way to collect, organise and act on
   website feedback. Collab Sauce transforms your website into a collaborative
   experience. (1) Change your website designs visually while logging CSS into

@@ -24,7 +24,9 @@ export const indexPageQuery = graphql`
   query IndexQuery($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
+      filter: {
+        frontmatter: { templateKey: { eq: "blog-post" }, isvisible: { eq: true } }
+      }
       limit: $limit
       skip: $skip
     ) {

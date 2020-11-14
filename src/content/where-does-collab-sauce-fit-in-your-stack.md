@@ -3,6 +3,7 @@ templateKey: blog-post
 path: /collabsauce-where-fit
 title: Where does Collab Sauce Fit in Your Stack?
 date: 2020-10-26T01:58:44.909Z
+isvisible: true
 description: Collab Sauce is the easiest way to collect, organise and act on
   website feedback. Collab Sauce transforms your website into a collaborative
   experience. (1) Change your website designs visually while logging CSS into
