@@ -99,21 +99,26 @@ const BlogPost = ({ data, location }) => {
           <Helmet title={metaTitle}>
             <meta name="description" content={metaDescription} />
             <meta name="keywords" content={metaKeywords} />
-            {metaImage ? <meta name="image" content={metaImage} /> : null}
+            {metaImage ? (
+              <meta name="image" content={`${siteUrl}${metaImage}`} />
+            ) : null}
             <meta property="og:type" content="article" />
             <meta property="og:title" content={metaTitle} />
             <meta property="og:description" content={metaDescription} />
             {metaImage ? (
-              <meta property="og:image" content={metaImage} />
+              <meta property="og:image" content={`${siteUrl}${metaImage}`} />
             ) : null}
             {metaImage ? (
-              <meta property="og:image:secure_url" content={metaImage} />
+              <meta
+                property="og:image:secure_url"
+                content={`${siteUrl}${metaImage}`}
+              />
             ) : null}
             <meta name="twitter:card" content="summary" />
             <meta name="twitter:title" content={metaTitle} />
             <meta name="twitter:description" content={metaDescription} />
             {metaImage ? (
-              <meta name="twitter:image" content={metaImage} />
+              <meta name="twitter:image" content={`${siteUrl}${metaImage}`} />
             ) : null}
           </Helmet>
         }
