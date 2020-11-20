@@ -44,7 +44,12 @@ const Layout = ({ location, children }) => {
       </Helmet>
       <header className="site-header">
         <div className="site-title">
-          <Link to="/">{title}</Link>
+          <a href="https://collabsauce.com" target="_blank" rel="noreferrer">
+            <img src={`${siteUrl}/images/collab-logo.svg`} alt="collab-logo" />
+          </a>
+          <Link className="blog-link" to="/">
+            Blog
+          </Link>
         </div>
         <Navigation />
       </header>
